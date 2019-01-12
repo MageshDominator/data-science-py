@@ -1,2 +1,2 @@
 # data-science-py
-projects on data analysis using python
+projects on Machine Learning using python
