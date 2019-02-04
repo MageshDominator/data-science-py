@@ -47,7 +47,8 @@ class LinearRegWithRegularization(object):
         # predict y with recently updated weights
         y_pred = X.dot(weights)
         # find the gradient
-        grad = -(y - y_pred).dot(X) + self.regularization.grad(weights)
+        grad = - (y - y_pred).dot(X) + self.regularization.grad(weights)
+        # return grad / X.shape[0]
         return grad
 
     # training the model
@@ -64,7 +65,7 @@ class LinearRegWithRegularization(object):
                 # gradient of loss
                 grad = self.gradient_descent(self.weights, X, y)
                 # update weights
-                self.weights -= self.learning_rate * grad
+                self.weights += self.learning_rate * grad
         else:
             # use optimizer from scipy
             result = op.minimize(fun = self.loss, x0 = self.weights,
