@@ -1,0 +1,7 @@
+[filepath]
+input_file = C:\xxxxx\ex3data1.mat
+output_file = C:\xxxxxx\ex3data1.csv
+
+[matrix_names]
+input_matrix = X
+output_matrix = y
