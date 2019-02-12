@@ -14,7 +14,9 @@ config = configparser.ConfigParser()
 config_file = config.read(r"config.ini")
 input_path = config["FILEPATH"]["INPUT"]
 output_path = config["FILEPATH"]["OUTPUT"]
+seperator = config["FILEPATH"]["SEP"]
 
+# print(seperator)
 input_files = []
 output_files = []
 
@@ -43,7 +45,7 @@ for i in range(len(input_files)):
         for line in data:
             lines.append(line.strip())
         for value in lines:
-            values.append(value.split(","))
+            values.append(value.split(str(seperator)))
     # print(values)
 
     # writing to csv from list of list
