@@ -1,6 +1,6 @@
 [filepath]
-input_file = C:\xxxxx\ex3data1.mat
-output_file = C:\xxxxxx\ex3data1.csv
+input_file = C:\xxxxx\
+output_file = C:\xxxxxx\
 
 [matrix_names]
 input_matrix = X
