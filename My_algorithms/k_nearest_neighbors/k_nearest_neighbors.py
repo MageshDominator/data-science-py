@@ -14,7 +14,7 @@ class KNN():
         # number of neighbors
         self.k = k
 
-    def eulicideanDistance(self, data1, data2):
+    def euclideanDistance(self, data1, data2):
         length = len(data2) - 1
         distance = 0
         # iterate over the list data1 and data2 leaving it's output(Y)
@@ -28,7 +28,7 @@ class KNN():
         neighbors = []
         # Single test data is given and this loops iterates over all training examples to find distance
         for i in range(len(X_train)):
-            dist = self.eulicideanDistance(X_test, X_train[i])
+            dist = self.euclideanDistance(X_test, X_train[i])
             distance.append((X_train[i], dist))
         distance.sort(key = operator.itemgetter(1))
         # choose the k_nearest examples as neighbors
