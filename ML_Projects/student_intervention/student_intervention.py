@@ -73,3 +73,11 @@ y_pred = svm_model.predict(X_test)
 
 
 print("Accuracy score:", accuracy_score(y_test, y_pred) * 100, "%")
+
+from sklearn.model_selection import GridSearchCV
+parameters = [{"kernel": ["rbf"], "C": [0.5, 1, 10]}]
+classifier = GridSearchCV(estimator=svm_model, param_grid=parameters, n_jobs=2, cv=5)
+classifier.fit(X_train, y_train)
+print(classifier.cv_results_.keys())
+accuarcy_score = classifier.best_score_
+best_params = classifier.best_params_
