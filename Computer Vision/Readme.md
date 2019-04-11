@@ -1,4 +1,4 @@
-This project is a Coding(Python) Implementation of whatever I learn releated to Computer Vision.<br />
+Coding(Python) Implementation of whatever I learn releated to Computer Vision.<br />
 This is mainly to get more hands-on for my better understanding.<br />
 Clear explanation is given with comments and docstrings, I hope it will be very helpful for beginners.<br />
 
