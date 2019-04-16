@@ -37,7 +37,8 @@ plt.imshow(resized_image)
 
 # drawing on images with values
 image = cv2.imread("./Logan.jpg", )
-cv2.rectangle(image, pt1=(1000, 200), pt2=(1500, 700), color=(0, 0, 255), thickness=20)
+cv2.rectangle(image, pt1=(1000, 200), pt2=(1500, 700), color=(0, 0, 255),
+              thickness=20)
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 plt.imshow(image)
 
@@ -45,9 +46,11 @@ plt.imshow(image)
 # Drawing on images with Mouse(Callback)
 def draw_rectangle(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONDOWN:
-        cv2.rectangle(image, pt1=(x - 250 , y - 250), pt2=(x + 250, y + 250), color=(0, 0, 255), thickness=20)
+        cv2.rectangle(image, pt1=(x - 250 , y - 250), pt2=(x + 250, y + 250),
+                      color=(0, 0, 255), thickness=20)
     elif event == cv2.EVENT_RBUTTONDOWN:
-        cv2.circle(image, center=(x, y), radius=250, color=(0, 255, 0), thickness=20)
+        cv2.circle(image, center=(x, y), radius=250, color=(0, 255, 0),
+                   thickness=20)
 
 # Drawing on images with mouse drag
 # InitiaLIZE GLOBAL VARIABLES
@@ -72,7 +75,8 @@ def drag_rectangle(event, x, y, flags, param):
     # draw the recatngle over that dragged axis
     elif event == cv2.EVENT_LBUTTONUP:
         drawing = False
-        cv2.rectangle(image, pt1=(ix , iy), pt2=(x, y), color=(0, 255, 0), thickness=20)
+        cv2.rectangle(image, pt1=(ix , iy), pt2=(x, y), color=(0, 255, 0),
+                      thickness=20)
 
 
 cv2.namedWindow(winname="Detect_Logan")
