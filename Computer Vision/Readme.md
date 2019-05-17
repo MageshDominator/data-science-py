@@ -10,4 +10,4 @@ Topics Covered:<br />
 <image_processing.py><br />
 3. Blending and Pasting of images(Masking included).<br />
 4. Image threshold(Normal and Adaptive methods).<br />
-5. <comingsoon.......>Blurring and smoothing
+5. Blurring and smoothing(median_blur, gaussian_blur, kernel_filtering). <br />

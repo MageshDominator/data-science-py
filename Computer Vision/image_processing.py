@@ -136,7 +136,7 @@ def blurring_smoothing(image, method, **kwargs):
             image (np.array) : input image
             
             method (str) : method to be applied on image -gamma_correction,
-                        kernel, blur, gaussian_blur
+                        kernel, blur, gaussian_blur, median_blur
     
             gamma (float) : gamma value to adjust brightness
                             (for gamma correction method)
