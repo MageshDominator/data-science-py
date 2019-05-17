@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 if __name__=="__main__":
 
     # Reads image in BGR format
-    image = cv2.imread("./Logan.jpg",)
+    image = cv2.imread("./data/Logan.jpg",)
 
     # -----------------------Image Color Processing----------------------------
     # MATPLOTLIB follows RGB channel so covert from BGR to RGB
@@ -18,7 +18,7 @@ if __name__=="__main__":
     plt.imshow(image)
 
     # Read image in grayscale format
-    gray_image = cv2.imread("./Logan.jpg", cv2.IMREAD_GRAYSCALE)
+    gray_image = cv2.imread("./data/Logan.jpg", cv2.IMREAD_GRAYSCALE)
     plt.imshow(gray_image, cmap="gray")
 
     # -----------------------------Resizing------------------------------------
@@ -33,7 +33,7 @@ if __name__=="__main__":
 
 
     # drawing on images with values
-    image = load_image("./Logan.jpg", )
+    image = load_image("./data/Logan.jpg", )
     cv2.rectangle(image, pt1=(1000, 200), pt2=(1500, 700), color=(0, 0, 255),
                   thickness=20)
     display_image(image)
@@ -80,7 +80,7 @@ if __name__=="__main__":
     cv2.setMouseCallback("Detect_Logan", drag_rectangle)
 
     # ----------------------Displaying with CV window--------------------------
-    image = cv2.imread("./Logan.jpg", )
+    image = cv2.imread("./data/Logan.jpg", )
 
     while True:
         cv2.imshow("Detect_Logan", image)

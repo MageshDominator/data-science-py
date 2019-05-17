@@ -11,4 +11,8 @@ Image<br />
 <image_processing.py><br />
 3. Blending and Pasting of images(Masking included).<br />
 4. Image threshold(Normal and Adaptive methods).<br />
-5. <comingsoon.......>Blurring and smoothing
+5. Blurring and smoothing(Gaussian Blur, Median_blur, gamma correction).<br />
+
+<image_morphology.py><br />
+6. Erosion and Dilation to shrink and expand image region respectively.<br />
+7. Opening and closing methods to remove background and foreground noise.<br />

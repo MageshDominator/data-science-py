@@ -177,8 +177,8 @@ def blurring_smoothing(image, method, **kwargs):
 if __name__=="__main__":
 
     # reading images
-    image = load_image("./joker.jpg") # Larger image
-    image_ex = load_image("./example.jpg") # Smaller image
+    image = load_image("./data/joker.jpg") # Larger image
+    image_ex = load_image("./data/example.jpg") # Smaller image
 
     # Blending and pasting of images
     new_image = one_over_other(image, image_ex, blend=True,
