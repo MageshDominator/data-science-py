@@ -8,6 +8,7 @@ Created on Fri May 17 18:56:23 2019
 import cv2
 import numpy as np
 
+
 def erode(image, kernel=np.ones((5, 5), dtype=np.uint8), iterations=1):
     """ Perform Erosion on image, this shrinks the image region based on kernel
 
@@ -97,5 +98,4 @@ if __name__ == "__main__":
 
     fg_noise_removed = remove_noise(fg_noisy_image, method="closing")
 
-    display_image(fg_noisy_image, gray=True)
-    cv2.imwrite("./data/fg_noise_removed.jpg", fg_noise_removed)
+    display_image(fg_noise_removed, gray=True)

@@ -4,7 +4,7 @@ Clear explanation is given with comments and docstrings, I hope it will be very 
 
 Topics Covered:<br />
 Image<br />
-<image_drawing.py>
+<image_drawing.py><br />
 1. Reading, Color conversion and displaying image with opencv, numpy and matplotlib.<br />
 2. Image resizing, drawing shapes over images(fixed size and also mouse drags using callbacks).<br />
 
@@ -16,3 +16,6 @@ Image<br />
 <image_morphology.py><br />
 6. Erosion and Dilation to shrink and expand image region respectively.<br />
 7. Opening and closing methods to remove background and foreground noise.<br />
+
+<edge_detection.py>
+8. Gradient methods for Edge detection(sobel operator, laplace operator).<br />
