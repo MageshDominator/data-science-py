@@ -1,7 +1,0 @@
-[filepath]
-input_file = C:\xxxxx\
-output_file = C:\xxxxxx\
-
-[matrix_names]
-input_matrix = X
-output_matrix = y
