@@ -7,7 +7,7 @@ Created on Fri May 17 13:10:13 2019
 import cv2
 import matplotlib.pyplot as plt
 
-def load_image(image_file, gray=False):
+def load_image(image_file, gray=False, rgb=True):
 
     """ Loading image from file system
 
@@ -15,6 +15,9 @@ def load_image(image_file, gray=False):
         image_file (string) : path of the image file
 
         gray (bool) : whether image to be loaded in grayscale
+
+        rgb(bool) : opencv reads images in bgr, this heps us to convert image
+                    to rgb
     Output:
         image (np.array) : array containing image
     """
@@ -22,7 +25,8 @@ def load_image(image_file, gray=False):
         image = cv2.imread(image_file, cv2.IMREAD_GRAYSCALE)
     else:
         image = cv2.imread(image_file)
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        if rgb:
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     return image
 
 def display_image(image, gray=False):
